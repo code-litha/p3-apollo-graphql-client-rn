@@ -1,0 +1,143 @@
+export const dataProducts = [
+  {
+    id: 1,
+    name: "MEN SOFT TOUCH LONG-SLEEVE",
+    slug: "men-soft-touch-crew-neck-long-sleeve-t-shirt",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, optio qui ullam quam voluptates consequatur sapiente nesciunt praesentium minima asperiores vitae, dolore culpa quas atque dolores nihil in, hic accusamus",
+    price: 10000,
+    mainImg:
+      "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/419496/item/goods_68_419496.jpg?width=734",
+    categoryId: 1,
+    authorId: 1,
+    userMongoId: null,
+    createdAt: "2022-04-08T02:28:23.759Z",
+    updatedAt: "2022-04-08T02:28:23.759Z",
+    Category: {
+      id: 1,
+      name: "men",
+      createdAt: "2022-04-08T02:28:23.752Z",
+      updatedAt: "2022-04-08T02:28:23.752Z",
+    },
+    Images: [
+      {
+        id: 1,
+        productId: 1,
+        imgUrl:
+          "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/419496/item/goods_68_419496.jpg?width=734",
+        createdAt: "2022-04-08T02:28:23.768Z",
+        updatedAt: "2022-04-08T02:28:23.768Z",
+      },
+      {
+        id: 2,
+        productId: 1,
+        imgUrl:
+          "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/419496/item/goods_68_419496.jpg?width=734",
+        createdAt: "2022-04-08T02:28:23.768Z",
+        updatedAt: "2022-04-08T02:28:23.768Z",
+      },
+      {
+        id: 3,
+        productId: 1,
+        imgUrl:
+          "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/419496/item/goods_68_419496.jpg?width=734",
+        createdAt: "2022-04-08T02:28:23.768Z",
+        updatedAt: "2022-04-08T02:28:23.768Z",
+      },
+    ],
+  },
+  {
+    id: 2,
+    name: "WOMEN UNIQLO+ DRY-EX",
+    slug: "women-uniqloplus-dry-ex-crew-neck-short-sleeve-t-shirt",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, optio qui ullam quam voluptates consequatur sapiente nesciunt praesentium minima asperiores vitae, dolore culpa quas atque dolores nihil in, hic accusamus",
+    price: 20000,
+    mainImg:
+      "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/431328/item/goods_64_431328.jpg?width=734",
+    categoryId: 2,
+    authorId: 1,
+    userMongoId: null,
+    createdAt: "2022-04-08T02:28:23.759Z",
+    updatedAt: "2022-04-08T02:28:23.759Z",
+    Category: {
+      id: 2,
+      name: "women",
+      createdAt: "2022-04-08T02:28:23.752Z",
+      updatedAt: "2022-04-08T02:28:23.752Z",
+    },
+    Images: [
+      {
+        id: 4,
+        productId: 2,
+        imgUrl:
+          "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/431328/item/goods_64_431328.jpg?width=734",
+        createdAt: "2022-04-08T02:28:23.768Z",
+        updatedAt: "2022-04-08T02:28:23.768Z",
+      },
+      {
+        id: 5,
+        productId: 2,
+        imgUrl:
+          "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/431328/sub/goods_431328_sub14.jpg?width=734",
+        createdAt: "2022-04-08T02:28:23.768Z",
+        updatedAt: "2022-04-08T02:28:23.768Z",
+      },
+      {
+        id: 6,
+        productId: 2,
+        imgUrl:
+          "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/431328/sub/goods_431328_sub20.jpg?width=734",
+        createdAt: "2022-04-08T02:28:23.768Z",
+        updatedAt: "2022-04-08T02:28:23.768Z",
+      },
+    ],
+  },
+  {
+    id: 3,
+    name: "KIDS U STRIPED SHORT-SLEEVE",
+    slug: "kids-u-striped-short-sleeve",
+    description:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, optio qui ullam quam voluptates consequatur sapiente nesciunt praesentium minima asperiores vitae, dolore culpa quas atque dolores nihil in, hic accusamus",
+    price: 50000,
+    mainImg:
+      "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/438173/item/goods_55_438173.jpg?width=734",
+    categoryId: 3,
+    authorId: 1,
+    userMongoId: null,
+    createdAt: "2022-04-08T02:28:23.759Z",
+    updatedAt: "2022-04-08T02:28:23.759Z",
+    Category: {
+      id: 3,
+      name: "kid",
+      createdAt: "2022-04-08T02:28:23.752Z",
+      updatedAt: "2022-04-08T02:28:23.752Z",
+    },
+    Images: [
+      {
+        id: 7,
+        productId: 3,
+        imgUrl:
+          "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/438173/item/goods_55_438173.jpg?width=734",
+        createdAt: "2022-04-08T02:28:23.768Z",
+        updatedAt: "2022-04-08T02:28:23.768Z",
+      },
+      {
+        id: 8,
+        productId: 3,
+        imgUrl:
+          "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/438173/sub/goods_438173_sub6.jpg?width=734",
+        createdAt: "2022-04-08T02:28:23.768Z",
+        updatedAt: "2022-04-08T02:28:23.768Z",
+      },
+      {
+        id: 9,
+        productId: 3,
+        imgUrl:
+          "https://image.uniqlo.com/UQ/ST3/WesternCommon/imagesgoods/438173/sub/goods_438173_sub13.jpg?width=734",
+        createdAt: "2022-04-08T02:28:23.768Z",
+        updatedAt: "2022-04-08T02:28:23.768Z",
+      },
+    ],
+  },
+];
