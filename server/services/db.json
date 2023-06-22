@@ -125,55 +125,6 @@
           "updatedAt": "2022-04-08T02:28:23.768Z"
         }
       ]
-    },
-    {
-      "name": "baju lebaran",
-      "description": "baju lebaran",
-      "price": 130000,
-      "mainImg": "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/455969/sub/goods_455969_sub14.jpg?width=750",
-      "id": 4
-    },
-    {
-      "name": "baju lebaran 2",
-      "description": "baju lebaran 2",
-      "price": 200000,
-      "mainImg": "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/455969/sub/goods_455969_sub14.jpg?width=750",
-      "id": 5
-    },
-    {
-      "name": "baju lebaran 3",
-      "description": "baju lebaran 3",
-      "price": 300000,
-      "mainImg": "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/455969/sub/goods_455969_sub14.jpg?width=750",
-      "id": 6
-    },
-    {
-      "name": "baju lebaran 4",
-      "description": "baju lebaran 4",
-      "price": 400000,
-      "mainImg": "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/455969/sub/goods_455969_sub14.jpg?width=750",
-      "id": 7
-    },
-    {
-      "name": "baju lebaran 5",
-      "description": "baju lebaran 5",
-      "price": 500000,
-      "mainImg": "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/455969/sub/goods_455969_sub14.jpg?width=750",
-      "id": 8
-    },
-    {
-      "name": "baju lebaran 7",
-      "description": "baju lebaran 7",
-      "price": 50000,
-      "mainImg": "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/455969/sub/goods_455969_sub14.jpg?width=750",
-      "id": 9
-    },
-    {
-      "name": "testttt",
-      "description": "desccc ",
-      "price": 10000,
-      "mainImg": "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/455969/sub/goods_455969_sub14.jpg?width=750",
-      "id": 10
     }
   ]
 }

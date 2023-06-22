@@ -16,6 +16,7 @@ import { useEffect, useState } from "react";
 import { dataProducts } from "../../assets/data/products";
 import { gql, useQuery } from "@apollo/client";
 import { GET_PRODUCT } from "../config/queries";
+import { renderPrice } from "../utils/renderPrice";
 
 export default function ProductDetail({ navigation, route }) {
   const { productId } = route.params;
@@ -97,7 +98,9 @@ export default function ProductDetail({ navigation, route }) {
         <View style={styles.contentContainer}>
           <Text style={styles.sectionTitle}>{product.name}</Text>
           <View style={styles.subHeading}>
-            <Text style={styles.sectionPrice}>Rp. 750.000,00</Text>
+            <Text style={styles.sectionPrice}>
+              Rp. {renderPrice(product.price)},00
+            </Text>
             <View
               style={{
                 flexDirection: "row",

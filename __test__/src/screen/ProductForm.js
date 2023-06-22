@@ -42,7 +42,7 @@ const ProductForm = ({ navigation }) => {
       description,
       price: +price,
       mainImg:
-        "https://image.uniqlo.com/UQ/ST3/AsianCommon/imagesgoods/455969/sub/goods_455969_sub14.jpg?width=750",
+        "https://www.pngplay.com/wp-content/uploads/2/Dress-Shirt-PNG-Photo-Image.png",
     };
     // console.log(payload);
     addProduct({
