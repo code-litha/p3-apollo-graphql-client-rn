@@ -19,7 +19,8 @@ const ProductForm = ({ navigation }) => {
   const [price, setPrice] = useState("");
   const [addProduct, { data, loading, error }] = useMutation(CREATE_PRODUCT, {
     refetchQueries: [
-      { query: GET_PRODUCTS },
+      GET_PRODUCTS,
+      // { query: GET_PRODUCTS },
       // 'Products' // pakai ini jika sebelumnya pernah melakukan fetch query ini
     ],
     onCompleted: (value) => {

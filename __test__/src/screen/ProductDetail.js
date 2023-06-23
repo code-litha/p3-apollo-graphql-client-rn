@@ -131,7 +131,7 @@ export default function ProductDetail({ navigation, route }) {
               color: color["gray-800"],
             }}
           >
-            By Hary Dhimas
+            By Instructor Phase 3
           </Text>
           <Text style={styles.description}>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam
@@ -183,7 +183,7 @@ export default function ProductDetail({ navigation, route }) {
               fontSize: 18,
               fontWeight: "bold",
             }}
-            onPress={() => navigation.navigate("Home")}
+            onPress={() => navigation.navigate("ProductList")}
           />
         </View>
       </ScrollView>
