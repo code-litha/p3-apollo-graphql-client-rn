@@ -14,15 +14,37 @@ import { TouchableOpacity } from "react-native";
 import { useEffect, useState } from "react";
 import { dataProducts } from "../../assets/data/products";
 import { renderPrice } from "../utils/renderPrice";
+import { gql, useQuery } from "@apollo/client";
+import { GET_PRODUCT } from "../config/queries";
 
 export default function ProductDetail({ navigation, route }) {
   const { productId } = route.params;
   const [product, setProduct] = useState({});
+  const { data, loading, error } = useQuery(GET_PRODUCT, {
+    variables: {
+      id: productId,
+    },
+  });
 
   useEffect(() => {
-    const findProduct = dataProducts.find((p) => p?.id == productId);
-    setProduct(findProduct || {});
-  }, []);
+    setProduct(data?.product || {});
+  }, [data]);
+
+  if (loading) {
+    return (
+      <View>
+        <Text>Loading...</Text>
+      </View>
+    );
+  }
+
+  if (error) {
+    return (
+      <View>
+        <Text>Error...</Text>
+      </View>
+    );
+  }
 
   return (
     <SafeAreaView style={{ flex: 1, width: "100%" }}>
