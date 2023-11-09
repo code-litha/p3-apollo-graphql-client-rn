@@ -1,7 +1,7 @@
 {
   "products": [
     {
-      "id": 7,
+      "id": 1,
       "name": "MEN SOFT TOUCH LONG-SLEEVE",
       "slug": "men-soft-touch-crew-neck-long-sleeve-t-shirt",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, optio qui ullam quam voluptates consequatur sapiente nesciunt praesentium minima asperiores vitae, dolore culpa quas atque dolores nihil in, hic accusamus",
@@ -43,7 +43,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 2,
       "name": "WOMEN UNIQLO+ DRY-EX",
       "slug": "women-uniqloplus-dry-ex-crew-neck-short-sleeve-t-shirt",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, optio qui ullam quam voluptates consequatur sapiente nesciunt praesentium minima asperiores vitae, dolore culpa quas atque dolores nihil in, hic accusamus",
@@ -85,7 +85,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 3,
       "name": "KIDS U STRIPED SHORT-SLEEVE",
       "slug": "kids-u-striped-short-sleeve",
       "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, optio qui ullam quam voluptates consequatur sapiente nesciunt praesentium minima asperiores vitae, dolore culpa quas atque dolores nihil in, hic accusamus",
@@ -125,48 +125,6 @@
           "updatedAt": "2022-04-08T02:28:23.768Z"
         }
       ]
-    },
-    {
-      "name": "Baju 1",
-      "description": "Desc",
-      "price": 10000,
-      "mainImg": "https://www.pngplay.com/wp-content/uploads/2/Dress-Shirt-PNG-Photo-Image.png",
-      "id": 10
-    },
-    {
-      "name": "Baju 2",
-      "description": "Desc",
-      "price": 10000,
-      "mainImg": "https://www.pngplay.com/wp-content/uploads/2/Dress-Shirt-PNG-Photo-Image.png",
-      "id": 11
-    },
-    {
-      "name": "Baju 3",
-      "description": "Desc",
-      "price": 10000,
-      "mainImg": "https://www.pngplay.com/wp-content/uploads/2/Dress-Shirt-PNG-Photo-Image.png",
-      "id": 12
-    },
-    {
-      "name": "Baju 4",
-      "description": "Desc",
-      "price": 10000,
-      "mainImg": "https://www.pngplay.com/wp-content/uploads/2/Dress-Shirt-PNG-Photo-Image.png",
-      "id": 13
-    },
-    {
-      "name": "Baju Open",
-      "description": "Desc",
-      "price": 10000,
-      "mainImg": "https://www.pngplay.com/wp-content/uploads/2/Dress-Shirt-PNG-Photo-Image.png",
-      "id": 14
-    },
-    {
-      "name": "Test",
-      "description": "Desc",
-      "price": 10000,
-      "mainImg": "https://www.pngplay.com/wp-content/uploads/2/Dress-Shirt-PNG-Photo-Image.png",
-      "id": 15
     }
   ]
 }

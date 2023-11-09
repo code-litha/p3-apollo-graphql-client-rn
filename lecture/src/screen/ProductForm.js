@@ -1,23 +1,11 @@
 import React, { useState } from "react";
 import { SafeAreaView, StyleSheet, TextInput } from "react-native";
 import BaseButton from "../components/BaseButton";
-import { gql, useMutation } from "@apollo/client";
-import { ADD_PRODUCT, GET_PRODUCTS } from "../config/queries";
 
 const ProductForm = ({ navigation }) => {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [price, setPrice] = useState("");
-  const [funcCreateProduct, { data, loading, error }] = useMutation(
-    ADD_PRODUCT,
-    {
-      refetchQueries: [GET_PRODUCTS],
-      onCompleted: () => {
-        // ketika selesai, maka mau pindah ke 'ProductList'
-        navigation.navigate("ProductList");
-      },
-    }
-  );
 
   const submitProduct = () => {
     const payload = {
@@ -27,12 +15,7 @@ const ProductForm = ({ navigation }) => {
       mainImg:
         "https://www.pngplay.com/wp-content/uploads/2/Dress-Shirt-PNG-Photo-Image.png",
     };
-    console.log(payload, "<<< payload");
-    funcCreateProduct({
-      variables: {
-        newProduct: payload,
-      },
-    });
+    console.log(payload);
   };
 
   return (
