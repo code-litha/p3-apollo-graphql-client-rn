@@ -125,6 +125,34 @@
           "updatedAt": "2022-04-08T02:28:23.768Z"
         }
       ]
+    },
+    {
+      "name": "Test",
+      "description": "Desc",
+      "price": 123,
+      "mainImg": "https://www.pngplay.com/wp-content/uploads/2/Dress-Shirt-PNG-Photo-Image.png",
+      "id": 4
+    },
+    {
+      "name": "Test baju",
+      "description": "Desc",
+      "price": 123456,
+      "mainImg": "https://www.pngplay.com/wp-content/uploads/2/Dress-Shirt-PNG-Photo-Image.png",
+      "id": 5
+    },
+    {
+      "name": "Test baju 2",
+      "description": "Desc 2",
+      "price": 123456,
+      "mainImg": "https://www.pngplay.com/wp-content/uploads/2/Dress-Shirt-PNG-Photo-Image.png",
+      "id": 6
+    },
+    {
+      "name": "Test baju 3",
+      "description": "Desc 3",
+      "price": 123456,
+      "mainImg": "https://www.pngplay.com/wp-content/uploads/2/Dress-Shirt-PNG-Photo-Image.png",
+      "id": 7
     }
   ]
 }

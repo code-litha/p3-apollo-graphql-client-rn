@@ -11,25 +11,40 @@ import { SafeAreaView } from "react-native-safe-area-context";
 import { AntDesign } from "@expo/vector-icons";
 import BaseButton from "../components/BaseButton";
 import { TouchableOpacity } from "react-native";
-import { useEffect, useState } from "react";
-import { dataProducts } from "../../assets/data/products";
 import { renderPrice } from "../utils/renderPrice";
+import { useQuery } from "@apollo/client";
+import { GET_PRODUCT_DETAIL } from "../config/queries";
 
 export default function ProductDetail({ navigation, route }) {
   const { productId } = route.params;
-  const [product, setProduct] = useState({});
+  const { loading, error, data } = useQuery(GET_PRODUCT_DETAIL, {
+    variables: {
+      productId: productId,
+    },
+  });
 
-  useEffect(() => {
-    const findProduct = dataProducts.find((p) => p?.id == productId);
-    setProduct(findProduct || {});
-  }, []);
+  if (loading) {
+    return (
+      <View>
+        <Text style={{ fontSize: 30 }}>Loading...</Text>
+      </View>
+    );
+  }
+
+  if (error) {
+    return (
+      <View>
+        <Text>Error...</Text>
+      </View>
+    );
+  }
 
   return (
     <SafeAreaView style={{ flex: 1, width: "100%" }}>
       <ScrollView style={styles.sectionContainer}>
         <ImageBackground
           source={{
-            uri: product.mainImg,
+            uri: data?.product?.mainImg,
           }}
           style={{
             width: "100%",
@@ -77,10 +92,10 @@ export default function ProductDetail({ navigation, route }) {
           </View>
         </ImageBackground>
         <View style={styles.contentContainer}>
-          <Text style={styles.sectionTitle}>{product.name}</Text>
+          <Text style={styles.sectionTitle}>{data?.product?.name}</Text>
           <View style={styles.subHeading}>
             <Text style={styles.sectionPrice}>
-              Rp. {renderPrice(product.price)},00
+              Rp. {renderPrice(data?.product?.price)},00
             </Text>
             <View
               style={{
@@ -142,7 +157,7 @@ export default function ProductDetail({ navigation, route }) {
               marginBottom: 12,
             }}
           >
-            {product?.Images?.map((image, idx) => (
+            {data?.product?.Images?.map((image, idx) => (
               <Image
                 key={`image-${idx}`}
                 source={{

@@ -4,17 +4,40 @@ import ProductCard from "./ProductCard";
 import color from "../styling/color";
 import ProductListHeader from "./ProductListHeader";
 import ProductListCategories from "./ProductListCategories";
-import { dataProducts } from "../../assets/data/products";
+import { useQuery } from "@apollo/client";
+import { GET_PRODUCTS } from "../config/queries";
 
 export default function ProductListMain({ title }) {
-  const [products, setProducts] = useState(dataProducts);
+  const { loading, error, data } = useQuery(GET_PRODUCTS);
 
   const renderItem = ({ item }) => <ProductCard product={item} />;
+
+  // console.log({
+  //   loading,
+  //   error,
+  //   data,
+  // });
+
+  if (loading) {
+    return (
+      <View>
+        <Text style={{ fontSize: 30 }}>Loading...</Text>
+      </View>
+    );
+  }
+
+  if (error) {
+    return (
+      <View>
+        <Text>Error...</Text>
+      </View>
+    );
+  }
 
   return (
     <View style={styles.sectionContainer}>
       <FlatList
-        data={products}
+        data={data?.products}
         renderItem={renderItem}
         keyExtractor={(item) => item.id}
         style={{ paddingBottom: 8 }}

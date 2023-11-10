@@ -1,11 +1,19 @@
 import React, { useState } from "react";
-import { SafeAreaView, StyleSheet, TextInput } from "react-native";
+import { SafeAreaView, StyleSheet, Text, TextInput, View } from "react-native";
 import BaseButton from "../components/BaseButton";
+import { useMutation } from "@apollo/client";
+import { ADD_PRODUCT, GET_PRODUCTS } from "../config/queries";
 
 const ProductForm = ({ navigation }) => {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [price, setPrice] = useState("");
+  const [funcBebas, { data, loading, error }] = useMutation(ADD_PRODUCT, {
+    refetchQueries: [GET_PRODUCTS],
+    onCompleted: () => {
+      navigation.navigate("ProductList");
+    },
+  });
 
   const submitProduct = () => {
     const payload = {
@@ -16,7 +24,28 @@ const ProductForm = ({ navigation }) => {
         "https://www.pngplay.com/wp-content/uploads/2/Dress-Shirt-PNG-Photo-Image.png",
     };
     console.log(payload);
+    funcBebas({
+      variables: {
+        newProduct: payload,
+      },
+    });
   };
+
+  if (loading) {
+    return (
+      <View>
+        <Text style={{ fontSize: 30 }}>Loading...</Text>
+      </View>
+    );
+  }
+
+  if (error) {
+    return (
+      <View>
+        <Text>Error...</Text>
+      </View>
+    );
+  }
 
   return (
     <SafeAreaView
